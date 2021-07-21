@@ -15,8 +15,6 @@ uniform vec2 resolution;
 
 vec3 _col;
 
-
-
 #define PI 3.14159
 #define	TAU 6.28318
 
@@ -63,7 +61,6 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
 
 	vec3 bbk = spunk(ppp.xy);
 	
-
     
     #if AA>1
     for( int m=0; m<AA; m++ )
@@ -85,7 +82,6 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
         for( int i=0; i<160; i++ )
         {
             vec3 pos = ro + t*rd;
-
         }
     
         // shading/lighting	
